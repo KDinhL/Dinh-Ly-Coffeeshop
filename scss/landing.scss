@@ -1,0 +1,357 @@
+@use './partials/global' as *;
+@mixin box-sizing--nitro-pink{
+    box-sizing: border-box;
+    border: solid #FFF0ED 1.25rem;
+}
+
+
+.BG_Pink{
+    background-color: #FFF0ED;
+    display: block;
+    width: calc(100%);
+@include box-sizing--nitro-pink
+}
+.topbar {
+    display: inline;
+    @include box-sizing--nitro-pink;   
+    height: 5rem;
+    width: 2.5rem;
+    @include center-contain;
+    }
+
+.topbar_BG{
+    background-color: #FFF0ED;
+height: 5rem;
+}
+
+.Contain{
+    display: flex;
+    margin: auto;
+    @include center-contain;
+    width: calc(33%);
+    flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.BG_LightGray{
+    background-color: #F7F7F7;
+    display: block;
+    width: calc(100%);
+    box-sizing: border-box;
+    border: solid #F7F7F7 1.25rem;
+@include center-contain;
+}
+
+
+.Blue__button {
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    width: 180px;
+    box-sizing: border-box;
+    height: 60px;
+    margin: -9px 0 0 -9px;
+    border: 0;
+    color: #123440;
+  
+&--text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 11px;
+    bottom: 11px;
+    left: 0;
+    width: 172px;
+    height: 54px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid black;
+}
+&::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    bottom: 0;
+    left: 7px;
+    background-color: #5bacc3;
+  }
+
+  &:hover {
+    color: #396d83;
+  }
+  &:focus {
+    outline: none;
+    color: #396d83;
+  }
+  &:active .Blue__button--text {
+    transform: translateX(7px) translateY(7px);
+  }
+}
+
+
+.productIMG {
+    height: 17.5rem;
+    object-fit: cover;
+
+    &__rotate:hover {
+        animation: rotation 2s infinite linear;
+      }
+    }
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+
+.Social{
+overflow: hidden;
+margin: 0; 
+padding: 0; 
+}
+
+.icon{
+    width: 3.125rem;
+    float: left;
+    overflow: visible;
+    margin-left: 0;
+    
+
+}
+.section{
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;    
+    width: 100%;
+justify-content: center;
+margin-top: 20px;
+margin-bottom: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.section_sub{
+    display: flex;
+   flex: 0 0 calc(30%) ;
+
+   @include center-contain;
+padding: 20px;
+}
+
+.section_sub-content{
+    display: flex;
+    flex-direction: column;
+    width: 20.625rem;
+    height: 27.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+background-color: inherit;
+}
+
+.section_sub-content--IMG{
+    display: flex;
+width: calc(100%);
+@include center-contain;
+background-color: #FFF;
+border-top-left-radius: 0.625rem;
+border-top-right-radius: 0.625rem;
+    box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+
+.section_Sub-NameContainerPrice{
+    display: flex;
+width: calc(100%);
+height: calc(100%);
+@include center-contain;
+background-color: #FFF0ED;
+border-bottom-left-radius: 0.625rem;
+border-bottom-right-radius: 0.625rem;
+    box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.section_Sub-NameContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    width: calc(70%);
+}
+.section_Sub--Price{
+    display: flex;
+    color: #5bacc3;
+    width: calc(20%);
+    font-weight: 700;
+align-items: center;
+}
+
+.section_sub-VewAll{
+display: flex;
+width: 100%;
+justify-content: center;
+margin: 20px;
+}
+.section_NitroCoffe{
+    display: inline-block;
+    width: calc(25%);
+    justify-content: center;
+    align-items: center;
+    text-align: Left;
+
+}
+.section_NitroCoffeIMG{
+    display: inline-block;
+    width: calc(60%);
+    @include center-contain;
+
+}
+
+.section_WRDiff{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(50%);
+    @include center-contain;
+}
+.section_WRDiff--R{
+    display: flex;
+    flex-direction: column;
+    height: calc(100%);
+    flex-wrap: wrap;
+    width: calc(50%);
+    @include center-contain;
+}
+
+.section_WRDiff--LogoIMG1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(33%);
+    justify-content: left;
+
+}
+.section_WRDiff--LogoIMG2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(33%);
+align-items: center;
+}
+.section_WRDiff--LogoIMG3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(33%);
+   align-items: flex-end;
+
+}
+
+.section_WRDiff--content{
+    display: flex;
+    width: calc(80%);
+    justify-content: center;
+
+}
+
+@mixin section_WRDiff--contentL{
+    justify-content:  LEFT;
+    align-items:  LEFT;
+    text-align:  LEFT;
+}
+
+.section_WRDiff--contentL{
+    display: flex;
+    width: calc(80%);
+@include section_WRDiff--contentL;
+}
+.section_WRDiff--contentL--IMG{
+    display: flex;
+    width: calc(80%);
+    @include section_WRDiff--contentL;
+    padding-left: 0;
+    margin-left: 0;
+}
+.section_WRDiff--LM{
+    display: flex;
+    width: calc(100%);
+    justify-content: left;
+    padding: 20px;
+    margin: 20px;
+    }
+    .section_WRDiff--contentR{
+        width: 400px;
+        display: flex;
+        height: 420px;
+        padding: 20px;
+        margin: 20px;
+        @include center-contain;
+        background-image:url(../assets/coldbrewbackground.png) ;
+        background-size: cover;
+        
+    &:before {  
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 11px;
+        bottom: 11px;
+        left: 0;
+        width: 400px;
+        height: 420px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background: transparent;
+        border: 6px solid black;
+      }
+    }
+
+
+
+
+
+.section_discountBanner{
+width: calc(100%);
+display: flex;
+justify-content: center;
+box-sizing: border-box;
+border: solid white 2.5rem;
+}
+.discount{
+    justify-content: center;
+    width: 60%;
+    color: white;
+    font-size: 2.813rem;
+    font-weight: 400 700;
+    animation: colord 2.5s infinite linear;
+background-color: #393939;
+}
+
+@keyframes colord {
+    from {background-color: #5bacc3;}
+    to {background-color: #393939;}
+  }
+
+
+.section_footer{
+    display: inline-block;
+    width: calc(25%);
+    justify-content: center;
+    align-items: center;
+    text-align: Left;
+}
+
+h3, p{
+    margin: 0;
+}

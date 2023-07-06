@@ -1,0 +1,54 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.logo {
+  width: 4rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.313rem;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.063rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.italic {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #393939;
+}
+
+a:hover {
+  color: #5bacc3;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.gray {
+  color: #909090;
+}/*# sourceMappingURL=global.css.map */
